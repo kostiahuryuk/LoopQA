@@ -1,0 +1,16 @@
+{
+  "name": "loopqa",
+  "version": "1.0.0",
+  "description": "This project implements a Playwright-driven test suite designed to validate workflows within the Demo App. The suite is built with a focus on **data-driven testing**, ensuring scalability, maintainability, and minimal code duplication. Test cases dynamically adapt to scenarios using a JSON-based configuration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.50.1",
+    "typescript": "^5.7.3"
+  }
+}
