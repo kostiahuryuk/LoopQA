@@ -6,7 +6,7 @@ This project implements a Playwright-driven test suite designed to validate work
 ## **Features**
 - **Automated Login**: Automates the login process for the Demo App using predefined credentials.
 - **Data-Driven Testing**: Scenarios are defined in a JSON file, enabling easy addition of new test cases without modifying test scripts.
-- **Cross-Browser Testing**: Supports testing on Chromium, Firefox, and WebKit.
+- **Cross-Browser Testing**: Supports testing on Chromium  (Firefox, and WebKit is disabled in playwright.config.js).
 - **Dynamic Validation**: Verifies tasks, tags, and columns dynamically for different workflows.
 
 ---
@@ -14,15 +14,16 @@ This project implements a Playwright-driven test suite designed to validate work
 ## **Project Structure**
 ```plaintext
 LoopQA/
-├── tests/                  # Contains Playwright test scripts
-│   └── login.spec.js       # Test cases for login and task verification
-├── data/                   # Contains test data
-│   └── testData.json       # JSON file with login credentials and test cases
-├── pages/                  # Contains page object models
-│   └── loginPage.js        # Page object for login interactions
-├── playwright.config.js    # Playwright configuration file
-├── package.json            # Node.js project dependencies
-└── README.md               # Project documentation
+├── tests/                               # Contains Playwright test scripts
+│   └── dashboardValidation.spec.js      # Test cases for login and task verification
+├── data/                                # Contains test data
+│   └── testData.json                    # JSON file with login credentials and test cases
+├── pages/                               # Contains page object models
+│   ├── loginPage.js                     # Page object for login interactions
+│   └── dashboard.js                     # Page object for dashboard page interactions
+├── playwright.config.js                 # Playwright configuration file
+├── package.json                         # Node.js project dependencies
+└── README.md                            # Project documentation
 ```
 
 ---
